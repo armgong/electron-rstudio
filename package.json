@@ -1,0 +1,14 @@
+{
+  "name": "electron-rstudio",
+  "version": "0.0.1",
+  "description": "Electron version rstudio demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Yu Gong",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
