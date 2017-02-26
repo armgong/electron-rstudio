@@ -16,6 +16,20 @@ const rmPath="/usr/bin/rm";
 const rmparams=["/tmp/rstudio-rsession"];
 let localserver
 let mainwindow
+//this function is for rsession need set env about R.
+function buildenv()
+{
+  var env = process.env;
+  var envPairs = [];
+
+  for (var key in env) {
+    envPairs.push(key + '=' + env[key]);
+  }
+  envPairs.push('R_HOME=/usr/lib/R');
+  envPairs.push('R_DOC_DIR=/usr/share/doc/R');
+  return envPairs;
+}
+
 function deltmpdir()
 {
   child(rmPath, rmparams, function(err, data) {
