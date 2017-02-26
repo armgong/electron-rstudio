@@ -1,5 +1,7 @@
-This is a try for using electron develop rstudio client , replace rstudio-desktop maybe , currently only a demo on linux, and the process is:
 2017-02-25
+
+This is a try for using electron develop rstudio client , replace rstudio-desktop maybe , currently only a demo on linux, and the process is:
+
 electron start ->  start rserve on 127.0.0.1 -> create http client and render on electron window -> close electron -> killrserver.
 
 this will only avialable on linux ,because rserver only run on linux.
@@ -16,6 +18,7 @@ will try figure out which way is better, currently perfer the first way ,but wil
 
 2017-02-26
 
-try rsession mode ,don't use rserver ,this work on linux and maybe work on mac ,but will not work on windows, becasuse windows use named pipe implement rsession server ,need modify windows rsession code.
+Also try rsession mode ,don't use rserver ,this work on linux and maybe work on mac ,but will not work on windows, becasuse windows use named pipe implement rsession server ,need modify windows rsession code.
 
- main.js (call rserver) and  session-main.js (call rsession directly) 
+now  main.js (call rserver) and  session-main.js (call rsession directly) both worked , next step is setup windows build machine for rstudio , so rsession can be modified and built on windows.
+
