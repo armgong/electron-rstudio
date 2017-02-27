@@ -22,3 +22,6 @@ Also try rsession mode ,don't use rserver ,this work on linux and maybe work on 
 
 now  main.js (call rserver) and  session-main.js (call rsession directly) both worked , next step is setup windows build machine for rstudio , so rsession can be modified and built on windows.
 
+2017-02-27
+
+windows 32 bit build env setup, now modify rsession source code and compiled, after some teak ,it works.
