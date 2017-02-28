@@ -25,3 +25,9 @@ now  main.js (call rserver) and  session-main.js (call rsession directly) both w
 2017-02-27
 
 windows 32 bit build env setup, now modify rsession source code and compiled, after some teak ,it works.
+
+2017-02-28 
+
+windows 64 bit compiled ,and run, next change rsession.exe to a windows service exe (will do it in next few weeks)
+
+
